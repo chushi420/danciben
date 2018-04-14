@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:app="http://schemas.android.com/apk/res-auto"
+xmlns:tools="http://schemas.android.com/tools"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+tools:context="com.example.sonodaumi.wordsbook.MainActivity"
+android:orientation="horizontal">
+
+<fragment
+    android:layout_width="0dp"
+    android:layout_height="match_parent"
+    android:name="com.example.sonodaumi.wordsbook.WordsFragment"
+    android:id="@+id/wordslist"
+    android:layout_weight="1"
+    tools:layout="@layout/words_fragment" />
+
+<FrameLayout
+    android:layout_width="0dp"
+    android:layout_height="match_parent"
+    android:id="@+id/worddetail"
+    android:layout_weight="2" />
+
+</LinearLayout>
